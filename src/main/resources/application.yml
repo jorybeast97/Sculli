@@ -1,0 +1,5 @@
+#项目配置启用dev环境
+spring:
+  profiles:
+    active: dev
+

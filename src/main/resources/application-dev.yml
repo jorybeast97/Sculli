@@ -1,0 +1,19 @@
+#默认访问端口server:
+server:
+  port: 9090
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hyrule?serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+#  Jpa相关配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#    必须配置方言为InnoDB,否则数据库外键无法使用
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#Spring配置
