@@ -33,11 +33,15 @@ public class InBoundHandler extends SimpleChannelInboundHandler<String> {
         super.channelInactive(ctx);
     }
 
+    /**
+     * 数据读取 , 从缓存区中读取数据
+     * @param ctx
+     * @param msg
+     * @throws Exception
+     */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        ByteBuf byteBuf = (ByteBuf) msg;
-        String res = NettyUtils.getMessage(byteBuf);
-        System.out.println(res);
+        String res = NettyUtils.getMessage((ByteBuf) msg);
 
     }
 
