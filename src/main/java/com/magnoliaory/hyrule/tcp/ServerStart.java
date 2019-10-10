@@ -14,7 +14,6 @@ public class ServerStart implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         modbusServer.start("测试服务器" , 13549);
-        System.out.println("服务器已经启动");
     }
 
 }
