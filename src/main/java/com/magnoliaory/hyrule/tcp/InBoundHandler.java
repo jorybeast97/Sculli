@@ -2,7 +2,9 @@ package com.magnoliaory.hyrule.tcp;
 
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundInvoker;
 import io.netty.channel.SimpleChannelInboundHandler;
+import org.omg.PortableServer.POA;
 import org.springframework.stereotype.Component;
 
 
@@ -21,7 +23,11 @@ public class InBoundHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        super.channelActive(ctx);
+        String host = NettyUtils.getChannelHost(ctx);
+        Integer port = NettyUtils.getChannelPort(ctx);
+
+        System.out.println("客户端 : " + host + " : " + port + " 已经连接 ... 准备开始通信");
+
     }
 
     @Override
@@ -40,7 +46,7 @@ public class InBoundHandler extends SimpleChannelInboundHandler<String> {
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext channelHandlerContext, String s) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, String s) throws Exception {
 
     }
 }
