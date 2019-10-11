@@ -44,6 +44,8 @@ public class InBoundHandler extends SimpleChannelInboundHandler<String> {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         String res = NettyUtils.getMessage((ByteBuf) msg);
+        System.out.println("服务端接受信息" +
+                res);
 
     }
 

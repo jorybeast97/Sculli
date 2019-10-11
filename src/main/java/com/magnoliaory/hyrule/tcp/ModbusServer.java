@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ModbusServer {
+public class ModbusServer implements AdaptServer {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -29,6 +29,7 @@ public class ModbusServer {
     @Autowired
     private ServerChannelInitializer serverChannelInitializer;
 
+    @Override
     public void start(String hostName, int port) {
 
         try {
@@ -42,9 +43,14 @@ public class ModbusServer {
             if (channelFuture.isSuccess()) {
                 logger.info("服务器 : "+hostName+" 启动成功 . . .");
             }
+            channelFuture.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
             logger.error("服务器 : "+hostName+" 启动失败 . . .");
+        } finally {
+            logger.info("Gourp关闭");
+            bossGroup.shutdownGracefully();
+            workGroup.shutdownGracefully();
         }
 
     }
