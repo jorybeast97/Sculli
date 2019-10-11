@@ -1,6 +1,8 @@
 package com.magnoliaory.hyrule.tcp;
 
 
+import cn.hutool.extra.mail.MailUtil;
+import com.magnoliaory.hyrule.entity.User;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 
@@ -48,5 +50,16 @@ public class NettyUtils {
             e.printStackTrace();
             return null;
         }
+    }
+
+    /**
+     * 当Netty连接断开(主动/被动)时,给客户端发送信息
+     * 在src\main\resource\mail.setting
+     * @param user
+     * @param msg
+     */
+    public static void sendmail(User user, String msg) {
+        String email = user.getEmail();
+        MailUtil.send(email, "客户端连接断开警告", msg , false);
     }
 }

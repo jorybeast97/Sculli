@@ -16,4 +16,10 @@ spring:
     show-sql: true
 #    必须配置方言为InnoDB,否则数据库外键无法使用
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-#Spring配置
+
+# Netty相关配置
+netty:
+  server:
+    auto-start: 1
+    serverName: Netty服务器
+    serverPort: 13333

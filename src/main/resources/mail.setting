@@ -1,0 +1,5 @@
+# 发件人,必须支持SMTP格式邮箱
+from = example@qq.com
+
+# 密码
+pass = root
