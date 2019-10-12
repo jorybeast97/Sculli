@@ -10,4 +10,5 @@ public class HyruleApplication {
         SpringApplication.run(HyruleApplication.class, args);
     }
 
+
 }
