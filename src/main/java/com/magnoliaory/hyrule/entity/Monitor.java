@@ -79,6 +79,12 @@ public class Monitor {
     private boolean monitorStatus;
 
     /**
+     * 报警忽略状态
+     */
+    @Column(name = "alarm_ignore_status", nullable = false)
+    private boolean alarmIgnoreStatus;
+
+    /**
      * 上限值
      */
     @Column(name = "upper_limit", nullable = true)
