@@ -23,3 +23,10 @@ netty:
     auto-start: 1
     serverName: Netty服务器
     serverPort: 13333
+
+#Pagehelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
