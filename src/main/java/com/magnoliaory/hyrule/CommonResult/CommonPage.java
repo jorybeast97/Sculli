@@ -15,6 +15,7 @@ public class CommonPage<T> {
     private Long total;
     private List<T> list;
 
+
     /**
      * 将PageHelper分页后的list转为分页信息
      */
