@@ -4,6 +4,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
 import lombok.Data;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Data
@@ -15,7 +16,7 @@ public class CommonPage<T> {
     private Long total;
     private List<T> list;
 
-
+    
     /**
      * 将PageHelper分页后的list转为分页信息
      */
