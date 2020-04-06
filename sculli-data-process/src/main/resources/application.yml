@@ -1,0 +1,19 @@
+server:
+  port: 10002
+spring:
+
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+    template:
+      default-receive-queue: hyrule-modbus-message-queue
+      exchange: hyruleExchange
+      routing-key: SEND_MODBUS_MESSAGE
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/hyrule
