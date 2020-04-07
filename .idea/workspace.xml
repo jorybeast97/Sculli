@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00a6790a-0fde-4ba6-9f3e-10485d56f9bb" name="Default Changelist" comment="" />
+    <list default="true" id="00a6790a-0fde-4ba6-9f3e-10485d56f9bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/configuration/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/test/java/com/magnoliaory/scullientityoperation/cache/RedisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/model/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/model/Extension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +60,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -61,6 +71,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1a6zOwaKxVtjDDCUq35CqXoG4nA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -73,6 +84,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sculli-data-process/src/main/resources" />
@@ -89,7 +101,7 @@
       <recent name="F:\Git仓库\Sculli\sculli-communication-server\src\main\java\com\magnoliaory\scullicommunicationserver" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SculliEntityOperationApplication">
+  <component name="RunManager" selected="JUnit.RedisTest.SelectCache">
     <configuration name="ExtensionMapperTest.selectExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sculli-entity-operation" />
       <extension name="coverage">
@@ -101,6 +113,38 @@
       <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.mapperTest" />
       <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.mapperTest.ExtensionMapperTest" />
       <option name="METHOD_NAME" value="selectExtension" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.SelectCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sculli-entity-operation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magnoliaory.scullientityoperation.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.cache.RedisTest" />
+      <option name="METHOD_NAME" value="SelectCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.setCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sculli-entity-operation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magnoliaory.scullientityoperation.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.cache.RedisTest" />
+      <option name="METHOD_NAME" value="setCache" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,6 +189,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTest.SelectCache" />
+        <item itemvalue="JUnit.RedisTest.setCache" />
         <item itemvalue="JUnit.ExtensionMapperTest.selectExtension" />
         <item itemvalue="JUnit.SculliEntityOperationApplicationTests.contextLoads" />
       </list>
@@ -160,7 +206,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586070802574</updated>
-      <workItem from="1586070803964" duration="25950000" />
+      <workItem from="1586070803964" duration="32646000" />
     </task>
     <servers />
   </component>
@@ -188,38 +234,42 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="274" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1586071332945" />
-    <state width="1493" height="324" key="GridCell.Tab.0.bottom" timestamp="1586130639623">
+    <state x="482" y="290" width="572" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586159567560">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586130639623" />
-    <state width="1493" height="324" key="GridCell.Tab.0.center" timestamp="1586130639623">
+    <state x="482" y="290" width="572" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1586159567560" />
+    <state width="1493" height="236" key="GridCell.Tab.0.bottom" timestamp="1586164018572">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586130639623" />
-    <state width="1493" height="324" key="GridCell.Tab.0.left" timestamp="1586130639622">
+    <state width="1493" height="236" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586164018572" />
+    <state width="1493" height="236" key="GridCell.Tab.0.center" timestamp="1586164018572">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586130639622" />
-    <state width="1493" height="324" key="GridCell.Tab.0.right" timestamp="1586130639623">
+    <state width="1493" height="236" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586164018572" />
+    <state width="1493" height="236" key="GridCell.Tab.0.left" timestamp="1586164018571">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586130639623" />
-    <state width="1493" height="324" key="GridCell.Tab.1.bottom" timestamp="1586130639624">
+    <state width="1493" height="236" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586164018571" />
+    <state width="1493" height="236" key="GridCell.Tab.0.right" timestamp="1586164018572">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586130639624" />
-    <state width="1493" height="324" key="GridCell.Tab.1.center" timestamp="1586130639623">
+    <state width="1493" height="236" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586164018572" />
+    <state width="1493" height="324" key="GridCell.Tab.1.bottom" timestamp="1586164018567">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586130639623" />
-    <state width="1493" height="324" key="GridCell.Tab.1.left" timestamp="1586130639623">
+    <state width="1493" height="324" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
+    <state width="1493" height="324" key="GridCell.Tab.1.center" timestamp="1586164018567">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586130639623" />
-    <state width="1493" height="324" key="GridCell.Tab.1.right" timestamp="1586130639624">
+    <state width="1493" height="324" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
+    <state width="1493" height="324" key="GridCell.Tab.1.left" timestamp="1586164018567">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586130639624" />
+    <state width="1493" height="324" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
+    <state width="1493" height="324" key="GridCell.Tab.1.right" timestamp="1586164018567">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="324" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
     <state x="249" y="6" key="SettingsEditor" timestamp="1586086685688">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
