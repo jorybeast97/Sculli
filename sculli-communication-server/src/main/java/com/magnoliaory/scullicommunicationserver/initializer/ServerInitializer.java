@@ -1,10 +1,9 @@
 package com.magnoliaory.scullicommunicationserver.initializer;
 
-import com.magnoliaory.scullicommunicationserver.handler.ModbusMessageHandler;
+import com.magnoliaory.scullicommunicationserver.handler.MessageHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
-import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class ServerInitializer extends ChannelInitializer<SocketChannel> {
 
     @Autowired
-    private ModbusMessageHandler modbusMessageHandler;
+    private MessageHandler messageHandler;
 
     /**
      * 配置各类拦截器
@@ -23,7 +22,7 @@ public class ServerInitializer extends ChannelInitializer<SocketChannel> {
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         ChannelPipeline channelPipeline = socketChannel.pipeline();
         //配置业务拦截器
-        channelPipeline.addLast(modbusMessageHandler);
+        channelPipeline.addLast(messageHandler);
 
     }
 }

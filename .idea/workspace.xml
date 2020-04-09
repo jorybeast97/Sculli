@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a6790a-0fde-4ba6-9f3e-10485d56f9bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/configuration/RedisConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/test/java/com/magnoliaory/scullientityoperation/cache/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/formula/DataFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/formula/ModbusEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/configuration/PreLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/model/Monitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/service/MonitorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f7527a8-5c18-4b26-b64e-c04ed71c3370.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f7527a8-5c18-4b26-b64e-c04ed71c3370.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/model/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/model/Extension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/handler/ModbusMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/handler/MessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/initializer/ServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/initializer/ServerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-communication-server/src/main/java/com/magnoliaory/scullicommunicationserver/utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/CommonPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/common/ResponeState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/mapper/ExtensionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/mapper/MonitorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/model/Extension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation/service/ExtensionService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/test/java/com/magnoliaory/scullientityoperation/SculliEntityOperationApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/test/java/com/magnoliaory/scullientityoperation/SculliEntityOperationApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/test/java/com/magnoliaory/scullientityoperation/cache/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sculli-entity-operation/src/test/java/com/magnoliaory/scullientityoperation/cache/RedisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sculli-entity-operation/src/test/java/com/magnoliaory/scullientityoperation/mapperTest/ExtensionMapperTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +66,7 @@
         <item name="hyrule@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="hyrule: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="extension: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="moniotr: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -54,8 +74,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -87,7 +107,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sculli-data-process/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sculli-entity-operation/src/main/java/com/magnoliaory/scullientityoperation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -96,28 +116,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Git仓库\Sculli\sculli-entity-operation\src\main\java\com\magnoliaory\scullientityoperation" />
       <recent name="F:\Git仓库\Sculli\sculli-data-process\src\main\resources" />
       <recent name="F:\Git仓库\Sculli\sculli-communication-server\src\main\resources" />
       <recent name="F:\Git仓库\Sculli\sculli-communication-server\src\main\java\com\magnoliaory\scullicommunicationserver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RedisTest.SelectCache">
-    <configuration name="ExtensionMapperTest.selectExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sculli-entity-operation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.magnoliaory.scullientityoperation.mapperTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.mapperTest" />
-      <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.mapperTest.ExtensionMapperTest" />
-      <option name="METHOD_NAME" value="selectExtension" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RedisTest.selectCacheAll">
     <configuration name="RedisTest.SelectCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sculli-entity-operation" />
       <extension name="coverage">
@@ -129,6 +134,38 @@
       <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.cache" />
       <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.cache.RedisTest" />
       <option name="METHOD_NAME" value="SelectCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sculli-entity-operation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magnoliaory.scullientityoperation.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.cache.RedisTest" />
+      <option name="METHOD_NAME" value="selectAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.selectCacheAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sculli-entity-operation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magnoliaory.scullientityoperation.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.cache.RedisTest" />
+      <option name="METHOD_NAME" value="selectCacheAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,17 +187,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SculliEntityOperationApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sculli-entity-operation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.magnoliaory.scullientityoperation.*" />
+          <option name="PATTERN" value="com.magnoliaory.scullientityoperation.cache.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation" />
-      <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.SculliEntityOperationApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.magnoliaory.scullientityoperation.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.magnoliaory.scullientityoperation.cache.RedisTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,10 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTest.selectCacheAll" />
+        <item itemvalue="JUnit.RedisTest.update" />
+        <item itemvalue="JUnit.RedisTest.selectAll" />
         <item itemvalue="JUnit.RedisTest.SelectCache" />
         <item itemvalue="JUnit.RedisTest.setCache" />
-        <item itemvalue="JUnit.ExtensionMapperTest.selectExtension" />
-        <item itemvalue="JUnit.SculliEntityOperationApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +245,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586070802574</updated>
       <workItem from="1586070803964" duration="32646000" />
+      <workItem from="1586247296504" duration="9401000" />
+      <workItem from="1586424397433" duration="10076000" />
     </task>
     <servers />
   </component>
@@ -214,22 +254,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="90" key="#Inspections" timestamp="1586089595410">
+    <state x="361" y="90" key="#Inspections" timestamp="1586252775368">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="90" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1586089595410" />
+    <state x="361" y="90" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1586252775368" />
+    <state x="361" y="90" key="#Notifications" timestamp="1586425636754">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1586425636754" />
     <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586130618994">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1586130618994" />
-    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586084983557">
+    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586425682162">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1586084983557" />
-    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1586095982926">
+    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1586425682162" />
+    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1586270560855">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1586095982926" />
+    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1586270560855" />
     <state x="274" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586071332945">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -238,42 +282,54 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="482" y="290" width="572" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1586159567560" />
-    <state width="1493" height="236" key="GridCell.Tab.0.bottom" timestamp="1586164018572">
+    <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586440434842">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586164018572" />
-    <state width="1493" height="236" key="GridCell.Tab.0.center" timestamp="1586164018572">
+    <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1586440434842" />
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586426293413">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586164018572" />
-    <state width="1493" height="236" key="GridCell.Tab.0.left" timestamp="1586164018571">
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1586426293413" />
+    <state width="1493" height="81" key="GridCell.Tab.0.bottom" timestamp="1586312316632">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586164018571" />
-    <state width="1493" height="236" key="GridCell.Tab.0.right" timestamp="1586164018572">
+    <state width="1493" height="81" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586312316632" />
+    <state width="1493" height="81" key="GridCell.Tab.0.center" timestamp="1586312316632">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586164018572" />
-    <state width="1493" height="324" key="GridCell.Tab.1.bottom" timestamp="1586164018567">
+    <state width="1493" height="81" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586312316632" />
+    <state width="1493" height="81" key="GridCell.Tab.0.left" timestamp="1586312316632">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
-    <state width="1493" height="324" key="GridCell.Tab.1.center" timestamp="1586164018567">
+    <state width="1493" height="81" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586312316632" />
+    <state width="1493" height="81" key="GridCell.Tab.0.right" timestamp="1586312316632">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
-    <state width="1493" height="324" key="GridCell.Tab.1.left" timestamp="1586164018567">
+    <state width="1493" height="81" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586312316632" />
+    <state width="1493" height="236" key="GridCell.Tab.1.bottom" timestamp="1586252277005">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
-    <state width="1493" height="324" key="GridCell.Tab.1.right" timestamp="1586164018567">
+    <state width="1493" height="236" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586252277005" />
+    <state width="1493" height="236" key="GridCell.Tab.1.center" timestamp="1586252277005">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="324" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586164018567" />
+    <state width="1493" height="236" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586252277005" />
+    <state width="1493" height="236" key="GridCell.Tab.1.left" timestamp="1586252277005">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="236" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586252277005" />
+    <state width="1493" height="236" key="GridCell.Tab.1.right" timestamp="1586252277005">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="236" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586252277005" />
     <state x="249" y="6" key="SettingsEditor" timestamp="1586086685688">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="249" y="6" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586086685688" />
+    <state x="639" y="316" width="340" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586425534207">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="639" y="316" width="340" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.864@0.0.1536.864" timestamp="1586425534207" />
     <state x="178" y="126" key="new project wizard" timestamp="1586081796925">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -282,9 +338,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1586091350649" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586130446754">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586249549524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1586130446754" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1586249549524" />
   </component>
 </project>

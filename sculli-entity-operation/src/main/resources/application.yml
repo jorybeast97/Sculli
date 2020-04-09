@@ -16,7 +16,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql://localhost:3306/hyrule
+    url: jdbc:mysql://localhost:3306/hyrule?serverTimezone=Hongkong
   redis:
     host: localhost
     port: 6379
+
+sculli:
+#  是否开启数据预加载
+  preload-state: false

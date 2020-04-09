@@ -1,12 +1,14 @@
 package com.magnoliaory.scullicommunicationserver.handler;
 
 import com.magnoliaory.scullicommunicationserver.utils.CommonUtils;
-import com.magnoliaory.scullientityoperation.model.Extension;
-import com.magnoliaory.scullientityoperation.service.ExtensionService;
+import com.magnoliaory.scullientityoperation.model.Monitor;
+import com.magnoliaory.scullientityoperation.service.MonitorService;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,15 +18,17 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @ChannelHandler.Sharable
-public class ModbusMessageHandler extends ChannelInboundHandlerAdapter {
+public class MessageHandler extends ChannelInboundHandlerAdapter {
 
+
+    @Autowired
+    private Logger logger = LoggerFactory.getLogger(MessageHandler.class);
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
     @Autowired
-    private ExtensionService extensionService;
-
+    private MonitorService monitorService;
     /**
      * 注册Handler,确保连接的网关已经在数据库中进行注册
      * 如果没有注册则拒绝连接
@@ -35,14 +39,12 @@ public class ModbusMessageHandler extends ChannelInboundHandlerAdapter {
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
         String host = CommonUtils.getClientHost(ctx);
         int port = CommonUtils.getClientPort(ctx);
-        System.out.println("开始进行校验......");
-        Extension extension = extensionService.selectExtensionByHost(host);
-        if (extension != null){
-            System.out.println("连接成‘’                                                                                                               功");
-        }else {
+        Monitor monitor = monitorService.selectByHostAndPort(host, port);
+        if (monitor == null) {
             ctx.channel().close();
-            System.out.println("验证不通过,客户端[" + host + ":" + port + "]不在数据库注册内");
+            logger.warn("客户端:[" + host + ":" + port + "] 未在数据库中注册,禁止连接服务端");
         }
+        logger.info("客户端:[" + host + ":" + port + "] 连接成功");
     }
 
     @Override
@@ -63,7 +65,19 @@ public class ModbusMessageHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         String modbusMsg = CommonUtils.convertStringFromByteBuf((ByteBuf) msg);
-        rabbitTemplate.convertAndSend(modbusMsg);
+        double data = Double.parseDouble(modbusMsg);
+        String host = CommonUtils.getClientHost(ctx);
+        int port = CommonUtils.getClientPort(ctx);
+        Monitor monitor = monitorService.selectByHostAndPort(host, port);
+        if ((monitor.getAlertLowerLimit() > data && monitor.getLower() < data)
+                || (monitor.getAlertUpperLimit() < data && monitor.getCeiling() > data)) {
+            logger.warn("数据预警状态");
+        }
+        if (monitor.getCeiling() < data || monitor.getLower() > data) {
+            logger.error("数据报警");
+        }
+        logger.info("数据正常");
+        //业务代码...
     }
 
 
@@ -74,6 +88,7 @@ public class ModbusMessageHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        super.exceptionCaught(ctx, cause);
+        logger.error(cause.getMessage());
+        cause.printStackTrace();
     }
 }
